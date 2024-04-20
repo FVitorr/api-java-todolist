@@ -1,0 +1,1 @@
+ Em aplicações web com arquitetura MVC (Model-View-Controller), a pasta "models" geralmente contém as classes que representam os modelos de dados do sistema. Esses modelos são frequentemente mapeados para tabelas em um banco de dados e podem conter métodos para acessar e manipular esses dados.
