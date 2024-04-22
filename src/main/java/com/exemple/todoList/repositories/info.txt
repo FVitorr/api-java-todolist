@@ -1,0 +1,3 @@
+Os repositórios são uma parte fundamental da camada de acesso a dados. Eles são responsáveis por fornecer uma interface para interagir com o banco de dados de forma simplificada e consistente.
+
+Os repositórios geralmente são interfaces que estendem uma das interfaces fornecidas pelo Spring Data JPA, como CrudRepository, PagingAndSortingRepository ou JpaRepository. Essas interfaces fornecem métodos CRUD (Create, Read, Update, Delete) padrão para operações comuns de banco de dados, como salvar, atualizar, excluir e buscar registros.
