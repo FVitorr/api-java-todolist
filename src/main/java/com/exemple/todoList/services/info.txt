@@ -1,0 +1,8 @@
+No Spring Boot, o conceito de "services" refere-se a classes que encapsulam a lógica de negócios da sua aplicação. Eles são componentes responsáveis por lidar com regras de negócio, realizar operações de acesso a dados e coordenar a interação entre diferentes partes do sistema.
+
+Os serviços no Spring Boot servem para:
+
+Separação de Responsabilidades: Os serviços isolam a lógica de negócios do resto da aplicação, promovendo um design modular e facilitando a manutenção e evolução do código.
+Reutilização de Código: Ao encapsular a lógica de negócios em serviços, é possível reutilizá-la em diferentes partes da aplicação, evitando duplicação de código.
+Testabilidade: Os serviços podem ser facilmente testados de forma isolada, o que facilita a escrita de testes unitários e a garantia de que a lógica de negócios está funcionando conforme o esperado.
+Injeção de Dependência: No Spring Boot, os serviços são tipicamente gerenciados pelo contêiner de inversão de controle (IoC) e podem ser facilmente injetados em outras classes que dependem deles, seguindo o princípio de injeção de dependência.

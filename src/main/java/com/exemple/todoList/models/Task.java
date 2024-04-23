@@ -46,22 +46,37 @@ public class Task {
   @Temporal(TemporalType.DATE)
   private Date date;
 
+  @Column(name = "date", length =11, nullable = false)
+  @NotNull
+  @NotEmpty
+  @Size( min=8,max=10)
+  private String Status;
+
   public Task() {
   }
 
-  public Task(long id, User user, String description, Date date) {
+  public String getStatus() {
+    return this.Status;
+  }
+
+  public Task(Long id, User user, String description, Date date, String Status) {
     this.id = id;
     this.user = user;
     this.description = description;
     this.date = date;
+    this.Status = Status;
+  }
+
+  public void setStatus(String Status) {
+    this.Status = Status;
   }
 
   public long getId() {
     return this.id;
   }
 
-  public void setId(long id) {
-    this.id = id;
+  public void setId(long Id) {
+    this.id = Id;
   }
 
   public User getUser() {
