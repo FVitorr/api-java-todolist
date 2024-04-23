@@ -2,7 +2,6 @@ package com.exemple.todoList.services;
 
 import java.util.Optional;
 
-import javax.management.RuntimeErrorException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -43,7 +42,7 @@ public class UserService {
 
   @Transactional
   public void delete (Long id){
-    User newObj = findById(id);
+    findById(id);
     try{
       this.userRepository.deleteById(id);
     }catch(Exception e){

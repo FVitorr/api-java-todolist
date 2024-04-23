@@ -8,10 +8,9 @@ import org.springframework.stereotype.Service;
 import com.exemple.todoList.models.Task;
 import com.exemple.todoList.models.User;
 import com.exemple.todoList.repositories.TaskRepository;
-import com.exemple.todoList.repositories.UserRepository;
+
 
 import jakarta.transaction.Transactional;
-import jakarta.validation.constraints.Null;
 
 @Service
 public class TaskService {
@@ -45,7 +44,7 @@ public class TaskService {
 
   @Transactional
   public void delete (Long id){
-    Task newObj = findById(id);
+    findById(id);
     try{
       this.taskRepository.deleteById(id);
     }catch(Exception e){

@@ -1,0 +1,7 @@
+Em uma aplicação Spring Boot, um "controller" (controlador) é uma classe que gerencia as requisições HTTP, definindo como essas requisições são mapeadas para métodos específicos que lidam com elas e retornam uma resposta adequada.
+
+No contexto do Spring Boot, os controllers são geralmente anotados com @Controller ou @RestController. Aqui está uma breve explicação de cada um:
+
+@Controller: Esta anotação é usada para marcar uma classe como um controlador. Os métodos dentro de uma classe anotada com @Controller são tratados como controladores de requisição HTTP. Eles geralmente retornam uma representação de uma visualização, como uma página HTML.
+@RestController: Esta anotação é uma extensão da anotação @Controller. Ela combina a funcionalidade das anotações @Controller e @ResponseBody. Um controlador marcado com @RestController retorna dados diretamente no corpo da resposta HTTP, geralmente em formato JSON ou XML.
+Os métodos dentro de um controller são mapeados para endpoints HTTP usando anotações como @GetMapping, @PostMapping, @PutMapping, @DeleteMapping, entre outras. Por exemplo:
